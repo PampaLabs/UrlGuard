@@ -1,0 +1,26 @@
+<Project>
+
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+        <PackageVersion>$(Version)</PackageVersion>
+        <Authors>UrlGuard Contributors</Authors>
+        <Copyright>Copyright (c) 2025</Copyright>
+        <PackageProjectUrl>http://github.com/PampaLabs/UrlGuard</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageReadmeFile></PackageReadmeFile>
+        <RepositoryUrl>https://github.com/PampaLabs/UrlGuard</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+
+</Project>
