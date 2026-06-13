@@ -1,4 +1,3 @@
-#if NET7_0_OR_GREATER
 using System.Net;
 
 using Microsoft.AspNetCore.Http;
@@ -47,4 +46,3 @@ public class SignedUrlEndpointFilter : IEndpointFilter
         return await next(context);
     }
 }
-#endif
